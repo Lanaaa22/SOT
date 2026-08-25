@@ -1,0 +1,10 @@
+.md-header {
+  background: radial-gradient(
+    circle at left,
+    #133e4d 0%,
+    #217b93 25%,
+    #133e4d 45%,
+    #0c1922 75%,
+    #050a0e 100%
+  );
+}
