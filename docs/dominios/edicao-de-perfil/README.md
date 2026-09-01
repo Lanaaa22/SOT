@@ -16,8 +16,27 @@ Ele atende a dois pilares fundamentais:
 
 | EPIC | Nome da Funcionalidade | Descrição / Objetivo |
 | :--- | :--- | :--- |
-| **EPIC-01** | Informar Dados Cadastrais e Endereço | Permite ao bolsista/usuário consultar e atualizar seus dados pessoais, contato, escolaridade/Lattes e endereços residencial e profissional. |
-| **EPIC-02** | Gestão de Dados Bancários Banestes | Permite ao bolsista informar conta-corrente Banestes existente ou selecionar agência para abertura/cadastro de conta para viabilizar pagamentos. |
-| **EPIC-03** | Informar Documentos e Termo de Responsabilidade | Permite ao bolsista anexar os documentos exigidos para suas bolsas, acompanhar o status de avaliação e gerar o Termo de Responsabilidade após preenchimento de declarações. |
-| **EPIC-04** | Gestão Cadastral de Pessoa Física (Gestor) | Permite ao gestor consultar, cadastrar, atualizar dados, vincular responsável legal e gerenciar o estado cadastral (ativação/suspensão) de pessoas físicas. |
-| **EPIC-05** | Consulta ao Histórico e Dashboard da Pessoa Física (Gestor) | Permite ao gestor auditar o histórico de alterações cadastrais e visualizar o painel com os projetos, bolsas e contadores vinculados ao indivíduo. |
+| **EPIC-01** | Informar Dados Pessoais, Endereço e Conta Banestes | Permite ao bolsista/usuário consultar e atualizar seus dados pessoais, contato, escolaridade, currículo Lattes e endereço residencial, além de vincular sua conta-corrente Banestes existente ou selecionar agência para abertura/cadastro de conta para viabilizar pagamentos. |
+| **EPIC-02** | Informar Documentos e Termo de Responsabilidade | Permite ao bolsista anexar os documentos exigidos para suas bolsas, acompanhar o status de avaliação e gerar o Termo de Responsabilidade após preenchimento de declarações. |
+| **EPIC-03** | Gestão Cadastral de Pessoa Física (Gestor) | Permite ao gestor consultar, cadastrar, atualizar dados, vincular responsável legal e gerenciar o estado cadastral (ativação/suspensão) de pessoas físicas. |
+| **EPIC-04** | Consulta ao Histórico e Dashboard da Pessoa Física (Gestor) | Permite ao gestor auditar o histórico de alterações cadastrais e visualizar o painel com os projetos, bolsas e contadores vinculados ao indivíduo. |
+
+---
+
+## 3. Fluxo de Navegação da Interface
+
+### Front-office (Bolsista / Usuário)
+
+* **Menu Lateral > Minhas Informações**
+  * **Aba:** `Meus Dados`
+    * **Funcionalidade:** `EPIC-01` (Informar Dados Pessoais, Endereço e Conta Banestes)
+  * **Aba:** `Meus Documentos`
+    * **Funcionalidade:** `EPIC-02` (Informar Documentos e Termo de Responsabilidade)
+
+### Back-office (Gestor / Agência)
+
+* **Menu Lateral > Pessoas**
+  * **Tela:** `Pessoas Físicas`
+    * **Tela / Fluxo Compartilhado:** As seguintes funcionalidades operam de forma integrada na mesma tela/painel de gestão da pessoa física:
+      - `EPIC-03` (Gestão Cadastral de Pessoa Física)
+      - `EPIC-04` (Consulta ao Histórico e Dashboard da Pessoa Física)
