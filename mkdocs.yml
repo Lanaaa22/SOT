@@ -44,6 +44,34 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - extra.css
+
+plugins:
+  - search
+
+nav:
+  - index.md
+  - Domínios: 
+      - Edição de Perfil:
+        - dominios/edicao-de-perfil/README.md
+      - Gestão de Equipe:
+        - dominios/gestao-de-equipe/README.md
+      - Acompanhamento de Projeto:
+        - dominios/acompanhamento-de-projeto/README.md
+      - Prestação de Contas:
+        - dominios/prestacao-de-contas/README.md
+      - Gerar Pagamentos:
+        - dominios/gerar-pagamentos/README.md
+      - Gestão de Editais:
+        - dominios/gestao-de-editais/README.md
+      - Gestão de Modalidades / Níveis de Bolsa:
+        - dominios/gestao-modalidades/README.md
+      - Captação de Projetos:
+        - dominios/captacao-de-projetos/README.md
