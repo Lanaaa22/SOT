@@ -57,9 +57,6 @@ extra_javascript:
 
 plugins:
   - search
-  - bpmn-js:
-      render: viewer
-      viewer_initialize: true
 
 nav:
   - index.md
@@ -68,7 +65,8 @@ nav:
         - dominios/edicao-de-perfil/README.md
       - Gestão de Equipe:
         - dominios/gestao-de-equipe/README.md
-        - dominios/gestao-de-equipe/diagrama-BPMN.md
+        - dominios/gestao-de-equipe/diagrama-BPMN-bolsista.md
+        - dominios/gestao-de-equipe/diagrama-BPMN-voluntario.md
       - Acompanhamento de Projeto:
         - dominios/acompanhamento-de-projeto/README.md
       - Prestação de Contas:

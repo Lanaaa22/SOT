@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.27.0">
+  <collaboration id="Collaboration_0nxyhxx">
+    <participant id="Participant_0nm2dpu" name="Solicitação de Bolsa" processRef="Process_1" />
+  </collaboration>
+  <process id="Process_1" isExecutable="false">
+    <laneSet id="LaneSet_1pt3rd5">
+      <lane id="Lane_19i3r2c" name="Coordenador">
+        <flowNodeRef>Event_0jzbeoe</flowNodeRef>
+      </lane>
+      <lane id="Lane_0cw86ql" name="Voluntário">
+        <flowNodeRef>Activity_00smw7c</flowNodeRef>
+        <flowNodeRef>Event_0vjz3l1</flowNodeRef>
+        <flowNodeRef>Event_1fofafs</flowNodeRef>
+        <flowNodeRef>Gateway_19a6tma</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="Activity_00smw7c" name="Responder Solicitação de Voluntariado">
+      <incoming>Flow_1naz39k</incoming>
+      <outgoing>Flow_0j9icv8</outgoing>
+    </task>
+    <startEvent id="Event_0jzbeoe" name="Solicitar Voluntário">
+      <outgoing>Flow_1naz39k</outgoing>
+    </startEvent>
+    <sequenceFlow id="Flow_1naz39k" sourceRef="Event_0jzbeoe" targetRef="Activity_00smw7c" />
+    <parallelGateway id="Gateway_19a6tma" name="Aceitou?">
+      <incoming>Flow_0j9icv8</incoming>
+      <outgoing>Flow_0iww6ni</outgoing>
+      <outgoing>Flow_0sw6dzt</outgoing>
+    </parallelGateway>
+    <sequenceFlow id="Flow_0j9icv8" sourceRef="Activity_00smw7c" targetRef="Gateway_19a6tma" />
+    <sequenceFlow id="Flow_0iww6ni" name="Sim" sourceRef="Gateway_19a6tma" targetRef="Event_0vjz3l1" />
+    <endEvent id="Event_0vjz3l1" name="Voluntário Ativado">
+      <incoming>Flow_0iww6ni</incoming>
+    </endEvent>
+    <endEvent id="Event_1fofafs" name="Vinculado Recusado">
+      <incoming>Flow_0sw6dzt</incoming>
+    </endEvent>
+    <sequenceFlow id="Flow_0sw6dzt" sourceRef="Gateway_19a6tma" targetRef="Event_1fofafs" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Collaboration_0nxyhxx">
+      <bpmndi:BPMNShape id="Participant_0nm2dpu_di" bpmnElement="Participant_0nm2dpu" isHorizontal="true">
+        <omgdc:Bounds x="155" y="80" width="965" height="368" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_19i3r2c_di" bpmnElement="Lane_19i3r2c" isHorizontal="true">
+        <omgdc:Bounds x="185" y="80" width="935" height="133" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0cw86ql_di" bpmnElement="Lane_0cw86ql" isHorizontal="true">
+        <omgdc:Bounds x="185" y="213" width="935" height="235" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_00smw7c_di" bpmnElement="Activity_00smw7c">
+        <omgdc:Bounds x="340" y="220" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0jzbeoe_di" bpmnElement="Event_0jzbeoe" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <omgdc:Bounds x="252" y="118" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="246" y="161" width="49" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_19a6tma_di" bpmnElement="Gateway_19a6tma" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
+        <omgdc:Bounds x="495" y="235" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="498" y="211" width="43" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0vjz3l1_di" bpmnElement="Event_0vjz3l1" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <omgdc:Bounds x="662" y="242" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="636" y="285" width="89" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1fofafs_di" bpmnElement="Event_1fofafs" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <omgdc:Bounds x="662" y="352" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="648" y="395" width="65" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1naz39k_di" bpmnElement="Flow_1naz39k">
+        <omgdi:waypoint x="288" y="136" />
+        <omgdi:waypoint x="314" y="136" />
+        <omgdi:waypoint x="314" y="260" />
+        <omgdi:waypoint x="340" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0j9icv8_di" bpmnElement="Flow_0j9icv8">
+        <omgdi:waypoint x="440" y="260" />
+        <omgdi:waypoint x="495" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0iww6ni_di" bpmnElement="Flow_0iww6ni">
+        <omgdi:waypoint x="545" y="260" />
+        <omgdi:waypoint x="662" y="260" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="594" y="242" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0sw6dzt_di" bpmnElement="Flow_0sw6dzt">
+        <omgdi:waypoint x="520" y="285" />
+        <omgdi:waypoint x="520" y="370" />
+        <omgdi:waypoint x="662" y="370" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

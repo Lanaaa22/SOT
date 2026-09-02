@@ -6,7 +6,7 @@ Este documento apresenta o fluxo oficial do processo de **Solicitação de Bolsa
 
 ## 1. Processo: Solicitação de Bolsa
 
-<div class="bpmn-viewer-card" data-url="diagram.bpmn">
+<div class="bpmn-viewer-card" data-url="diagrama-bolsista.bpmn">
   <div class="bpmn-toolbar">
     <button type="button" class="bpmn-btn btn-bpmn-zoom-in" title="Aproximar (Zoom In)">➕ Zoom In</button>
     <button type="button" class="bpmn-btn btn-bpmn-zoom-out" title="Afastar (Zoom Out)">➖ Zoom Out</button>
@@ -15,7 +15,7 @@ Este documento apresenta o fluxo oficial do processo de **Solicitação de Bolsa
   </div>
   <div class="bpmn-canvas"></div>
   <script type="text/xml" class="bpmn-data">
---8<-- "docs/dominios/gestao-de-equipe/diagram.bpmn"
+--8<-- "docs/dominios/gestao-de-equipe/diagrama-bolsista.bpmn"
   </script>
 </div>
 
