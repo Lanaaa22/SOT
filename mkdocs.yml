@@ -57,6 +57,9 @@ extra_javascript:
 
 plugins:
   - search
+  - bpmn-js:
+      render: viewer
+      viewer_initialize: true
 
 nav:
   - index.md

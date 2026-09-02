@@ -28,7 +28,8 @@ Ele atende a dois pilares fundamentais:
 
 ### Front-office (Bolsista / Usuário)
 
-* **Menu Lateral > Minhas Informações**
+**Menu Lateral > Minhas Informações**
+
   * **Aba:** `Meus Dados`
     * **Funcionalidade:** `EPIC-01` (Informar Dados Pessoais, Endereço e Conta Banestes)
   * **Aba:** `Meus Documentos`
@@ -40,6 +41,9 @@ Ele atende a dois pilares fundamentais:
   
   * **Tela Principal:** `Pessoas Físicas` (Listagem geral para consulta, filtro e acesso aos registros)
     * **Tela:** `Detalhes` (Acessada ao selecionar um indivíduo da lista)
-        * **Aba** `Dashboard`**:** `EPIC-03` (Consulta ao Dashboard da Pessoa Física)
-        * **Aba Lattes:** `EPIC-04` (Visualização e Importação de Currículo Lattes)
-        * **Aba Cadastro:** `EPIC-05` (Gestão Cadastral e Histórico de Pessoa Física)
+        * **Aba:** `Dashboard`
+            * **Funcionalidade:** `EPIC-03` (Consulta ao Dashboard da Pessoa Física)
+        * **Aba:** `Lattes`
+            * **Funcionalidade:** `EPIC-04` (Visualização e Importação de Currículo Lattes)
+        * **Aba:** `Cadastro`
+            * **Funcionalidade:** `EPIC-05` (Gestão Cadastral e Histórico de Pessoa Física)
