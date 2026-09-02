@@ -44,14 +44,16 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
+  - https://unpkg.com/bpmn-js@18.2.0/dist/assets/bpmn-js.css
+  - https://unpkg.com/bpmn-js@18.2.0/dist/assets/diagram-js.css
+  - https://unpkg.com/bpmn-js@18.2.0/dist/assets/bpmn-font/css/bpmn.css
   - extra.css
+
+extra_javascript:
+  - https://unpkg.com/bpmn-js@18.2.0/dist/bpmn-navigated-viewer.production.min.js
+  - javascripts/bpmn-loader.js
 
 plugins:
   - search
@@ -63,6 +65,7 @@ nav:
         - dominios/edicao-de-perfil/README.md
       - Gestão de Equipe:
         - dominios/gestao-de-equipe/README.md
+        - dominios/gestao-de-equipe/diagrama-BPMN.md
       - Acompanhamento de Projeto:
         - dominios/acompanhamento-de-projeto/README.md
       - Prestação de Contas:

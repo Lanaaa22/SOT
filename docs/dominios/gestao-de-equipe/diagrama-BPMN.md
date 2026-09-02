@@ -1,0 +1,173 @@
+# Diagrama BPMN do Bolsista
+
+Este documento apresenta o fluxo oficial do processo de **Solicitação de Bolsa** pertencente ao domínio de **Gestão de Equipe**, modelado em conformidade com o padrão BPMN 2.0.
+
+---
+
+## 1. Processo: Solicitação de Bolsa
+
+<div class="bpmn-viewer-card" data-url="diagram.bpmn">
+  <div class="bpmn-toolbar">
+    <button type="button" class="bpmn-btn btn-bpmn-zoom-in" title="Aproximar (Zoom In)">➕ Zoom In</button>
+    <button type="button" class="bpmn-btn btn-bpmn-zoom-out" title="Afastar (Zoom Out)">➖ Zoom Out</button>
+    <button type="button" class="bpmn-btn btn-bpmn-zoom-reset" title="Ajustar à Tela">🔄 Ajustar</button>
+    <button type="button" class="bpmn-btn btn-bpmn-fullscreen" title="Tela Cheia">⛶ Tela Cheia</button>
+  </div>
+  <div class="bpmn-canvas"></div>
+  <script type="text/xml" class="bpmn-data">
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.27.0">
+  <collaboration id="Collaboration_0nxyhxx">
+    <participant id="Participant_0nm2dpu" name="Solicitação de Bolsa" processRef="Process_1" />
+  </collaboration>
+  <process id="Process_1" isExecutable="false">
+    <laneSet id="LaneSet_1pt3rd5">
+      <lane id="Lane_19i3r2c" name="Coordenador">
+        <flowNodeRef>Event_0jzbeoe</flowNodeRef>
+        <flowNodeRef>Activity_1askpn0</flowNodeRef>
+      </lane>
+      <lane id="Lane_0cw86ql" name="Bolsista">
+        <flowNodeRef>Activity_00smw7c</flowNodeRef>
+        <flowNodeRef>Event_0vjz3l1</flowNodeRef>
+      </lane>
+      <lane id="Lane_0oxd573" name="Gestor Fapes">
+        <flowNodeRef>Activity_1qbg3eh</flowNodeRef>
+        <flowNodeRef>Gateway_1cbiahi</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="Activity_00smw7c" name="Adicionar Documentos na Solicitação">
+      <incoming>Flow_1naz39k</incoming>
+      <incoming>Flow_1m9iy5h</incoming>
+      <outgoing>Flow_03o7apa</outgoing>
+    </task>
+    <task id="Activity_1qbg3eh" name="Avaliar Solicitação">
+      <incoming>Flow_1xax0i7</incoming>
+      <outgoing>Flow_1adoykf</outgoing>
+    </task>
+    <parallelGateway id="Gateway_1cbiahi" name="Documentação está válida?">
+      <incoming>Flow_1adoykf</incoming>
+      <outgoing>Flow_0zje29x</outgoing>
+      <outgoing>Flow_1m9iy5h</outgoing>
+    </parallelGateway>
+    <startEvent id="Event_0jzbeoe" name="Solicitar&#10;Bolsa">
+      <outgoing>Flow_1naz39k</outgoing>
+    </startEvent>
+    <task id="Activity_1askpn0" name="Submeter Solicitação">
+      <incoming>Flow_03o7apa</incoming>
+      <outgoing>Flow_1xax0i7</outgoing>
+    </task>
+    <endEvent id="Event_0vjz3l1" name="Bolsa Implementada">
+      <incoming>Flow_0zje29x</incoming>
+    </endEvent>
+    <sequenceFlow id="Flow_1naz39k" sourceRef="Event_0jzbeoe" targetRef="Activity_00smw7c" />
+    <sequenceFlow id="Flow_1m9iy5h" name="Não" sourceRef="Gateway_1cbiahi" targetRef="Activity_00smw7c" />
+    <sequenceFlow id="Flow_03o7apa" sourceRef="Activity_00smw7c" targetRef="Activity_1askpn0" />
+    <sequenceFlow id="Flow_1xax0i7" sourceRef="Activity_1askpn0" targetRef="Activity_1qbg3eh" />
+    <sequenceFlow id="Flow_1adoykf" sourceRef="Activity_1qbg3eh" targetRef="Gateway_1cbiahi" />
+    <sequenceFlow id="Flow_0zje29x" name="Sim" sourceRef="Gateway_1cbiahi" targetRef="Event_0vjz3l1" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Collaboration_0nxyhxx">
+      <bpmndi:BPMNShape id="Participant_0nm2dpu_di" bpmnElement="Participant_0nm2dpu" isHorizontal="true">
+        <omgdc:Bounds x="155" y="80" width="965" height="380" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_19i3r2c_di" bpmnElement="Lane_19i3r2c" isHorizontal="true">
+        <omgdc:Bounds x="185" y="80" width="935" height="133" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0cw86ql_di" bpmnElement="Lane_0cw86ql" isHorizontal="true">
+        <omgdc:Bounds x="185" y="213" width="935" height="107" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0oxd573_di" bpmnElement="Lane_0oxd573" isHorizontal="true">
+        <omgdc:Bounds x="185" y="320" width="935" height="140" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_00smw7c_di" bpmnElement="Activity_00smw7c">
+        <omgdc:Bounds x="340" y="220" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1qbg3eh_di" bpmnElement="Activity_1qbg3eh">
+        <omgdc:Bounds x="640" y="336" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1cbiahi_di" bpmnElement="Gateway_1cbiahi" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
+        <omgdc:Bounds x="805" y="351" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="865" y="362" width="74" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0jzbeoe_di" bpmnElement="Event_0jzbeoe" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <omgdc:Bounds x="252" y="118" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="250" y="161" width="40" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1askpn0_di" bpmnElement="Activity_1askpn0">
+        <omgdc:Bounds x="500" y="104" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0vjz3l1_di" bpmnElement="Event_0vjz3l1" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <omgdc:Bounds x="933" y="238" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="916" y="281" width="70" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1naz39k_di" bpmnElement="Flow_1naz39k">
+        <omgdi:waypoint x="288" y="136" />
+        <omgdi:waypoint x="314" y="136" />
+        <omgdi:waypoint x="314" y="260" />
+        <omgdi:waypoint x="340" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_03o7apa_di" bpmnElement="Flow_03o7apa">
+        <omgdi:waypoint x="440" y="260" />
+        <omgdi:waypoint x="470" y="260" />
+        <omgdi:waypoint x="470" y="144" />
+        <omgdi:waypoint x="500" y="144" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1xax0i7_di" bpmnElement="Flow_1xax0i7">
+        <omgdi:waypoint x="600" y="144" />
+        <omgdi:waypoint x="620" y="144" />
+        <omgdi:waypoint x="620" y="376" />
+        <omgdi:waypoint x="640" y="376" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1adoykf_di" bpmnElement="Flow_1adoykf">
+        <omgdi:waypoint x="740" y="376" />
+        <omgdi:waypoint x="805" y="376" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0zje29x_di" bpmnElement="Flow_0zje29x">
+        <omgdi:waypoint x="830" y="351" />
+        <omgdi:waypoint x="830" y="256" />
+        <omgdi:waypoint x="933" y="256" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="836" y="302.5" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1m9iy5h_di" bpmnElement="Flow_1m9iy5h">
+        <omgdi:waypoint x="830" y="401" />
+        <omgdi:waypoint x="830" y="440" />
+        <omgdi:waypoint x="390" y="440" />
+        <omgdi:waypoint x="390" y="300" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="600" y="422" width="21" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
+  </script>
+</div>
+
+---
+
+## 2. Detalhamento das Raias e Etapas
+
+| Raia / Ator | Elemento | Tipo BPMN | Descrição da Atividade / Regra |
+| :--- | :--- | :--- | :--- |
+| **Coordenador** | `Solicitar Bolsa` | Evento de Início | O coordenador inicia o processo criando a solicitação e indicando o bolsista. |
+| **Bolsista** | `Adicionar Documentos na Solicitação` | Tarefa | O bolsista insere os documentos comprobatórios e dados exigidos. |
+| **Coordenador** | `Submeter Solicitação` | Tarefa | O coordenador revisa os dados e envia formalmente a solicitação à FAPES. |
+| **Gestor Fapes** | `Avaliar Solicitação` | Tarefa | A equipe técnica da FAPES faz a análise de conformidade da solicitação. |
+| **Gestor Fapes** | `Documentação está válida?` | Decisão (Gateway) | • **Sim:** Segue para implementação da bolsa.<br>• **Não:** Retorna para o bolsista corrigir a documentação. |
+| **Bolsista** | `Bolsa Implementada` | Evento de Fim | Encerramento do fluxo com a implementação e ativação da bolsa no projeto. |
