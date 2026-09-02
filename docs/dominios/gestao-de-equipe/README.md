@@ -32,12 +32,12 @@ O domínio de **Gestão de Equipe** é responsável por gerenciar a composição
   * **Tela:** `Ações > Adicionar Voluntário`
     * **Funcionalidade:** `EPIC-05` (Adicionar Voluntário)
   * **Tela:** `Bolsistas do Projeto`
-    * > **Tela / Fluxo Compartilhado:** A listagem e gerenciamento de membros da equipe centralizam o acompanhamento e as seguintes ações operacionais:
-    * > - **Ação Solicitar Bolsa:** `EPIC-01` (Criar Solicitação)
-    * > - **Ação Submeter Solicitação:** `EPIC-03` (Submeter Solicitação)
-    * > - **Ação Adicionar Voluntário:** `EPIC-05` (Adicionar Voluntário)
-    * > - **Ação Estender Bolsa:** `EPIC-08` (Estender Bolsa)
-    * > - **Ação Cancelar Bolsa:** `EPIC-09` (Cancelar Bolsa)
+    * **Tela / Fluxo Compartilhado:** A listagem e gerenciamento de membros da equipe centralizam o acompanhamento e as seguintes ações operacionais:
+    * **Ação Solicitar Bolsa:** `EPIC-01` (Criar Solicitação)
+    * **Ação Submeter Solicitação:** `EPIC-03` (Submeter Solicitação)
+    * **Ação Adicionar Voluntário:** `EPIC-05` (Adicionar Voluntário)
+    * **Ação Estender Bolsa:** `EPIC-08` (Estender Bolsa)
+    * **Ação Cancelar Bolsa:** `EPIC-09` (Cancelar Bolsa)
 
 ### Front-office (Bolsista)
 
