@@ -73,8 +73,8 @@ nav:
         - dominios/acompanhamento-de-projeto/README.md
       - D004 - Prestação de Contas:
         - dominios/prestacao-de-contas/README.md
-      - D005 - Gerar Pagamentos:
-        - dominios/gerar-pagamentos/README.md
+      - D005 - Gerir Pagamentos:
+        - dominios/gerir-pagamentos/README.md
       - D006 - Gestão de Editais:
         - dominios/gestao-de-editais/README.md
       - D007 - Gestão de Modalidades / Níveis de Bolsa:
