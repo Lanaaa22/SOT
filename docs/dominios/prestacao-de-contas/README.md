@@ -1,4 +1,4 @@
-# Prestação de Contas
+# D004 - Prestação de Contas
 
 ## 1. Descrição do Domínio
 
@@ -6,7 +6,7 @@ O domínio de **Prestação de Contas** é responsável pela gestão, comprovaç
 
 Ele atende a dois pilares fundamentais:
 
-- **Execução e Comprovação Financeira (Front-office - Coordenador):** Permite ao coordenador do projeto monitorar a evolução dos gastos em relação ao orçamento previsto, acompanhar o extrato das transações bancárias da conta vinculada (débitos e créditos), prestar contas detalhadas de cada despesa anexando comprovantes fiscais e cotações exigidas, ratear os custos nas contas contábeis correspondentes e submeter a prestação de contas para avaliação da FAPES.
+- **Execução e Comprovação Financeira (Front-office - Coordenador):** Permite ao coordenador do projeto monitorar a evolução dos gastos em relação ao orçamento previsto, acompanhar o extrato das transações bancárias da conta vinculada (débitos e créditos), prestar contas detalhadas de cada despesa anexando comprovantes fiscais e cotações exigidas e submeter a prestação de contas para avaliação da FAPES.
 
 - **Auditoria e Homologação de Contas (Back-office - Gestor / Agência):** Permite aos analistas e gestores da FAPES auditar as prestações de contas financeiras submetidas, conferir a autenticidade e conformidade de documentos fiscais e orçamentos, aprovar prestações de forma individual ou em lote, devolver para revisão apontando pendências ou negar despesas não conformes, assegurando o cumprimento das normas legais e dos editais de fomento.
 
