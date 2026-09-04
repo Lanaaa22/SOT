@@ -1,4 +1,4 @@
-# D004 - Prestação de Contas
+# Prestação de Contas
 
 ## 1. Descrição do Domínio
 

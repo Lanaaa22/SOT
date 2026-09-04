@@ -2,6 +2,8 @@ site_name: SOT ConectaFapes
 site_url: https://leds-conectafapes
 theme:
   name: material
+  features:
+    - navigation.indexes
   favicon: assets/fapesLogo.svg
   font:
     text: Abel
@@ -61,21 +63,21 @@ plugins:
 nav:
   - index.md
   - Domínios: 
-      - Edição de Perfil:
+      - D001 - Edição de Perfil:
         - dominios/edicao-de-perfil/README.md
-      - Gestão de Equipe:
+      - D002 - Gestão de Equipe:
         - dominios/gestao-de-equipe/README.md
         - dominios/gestao-de-equipe/diagrama-BPMN-bolsista.md
         - dominios/gestao-de-equipe/diagrama-BPMN-voluntario.md
-      - Acompanhamento de Projeto:
+      - D003 - Acompanhamento de Projeto:
         - dominios/acompanhamento-de-projeto/README.md
-      - Prestação de Contas:
+      - D004 - Prestação de Contas:
         - dominios/prestacao-de-contas/README.md
-      - Gerar Pagamentos:
+      - D005 - Gerar Pagamentos:
         - dominios/gerar-pagamentos/README.md
-      - Gestão de Editais:
+      - D006 - Gestão de Editais:
         - dominios/gestao-de-editais/README.md
-      - Gestão de Modalidades / Níveis de Bolsa:
+      - D007 - Gestão de Modalidades / Níveis de Bolsa:
         - dominios/gestao-modalidades/README.md
-      - Captação de Projetos:
+      - D008 - Captação de Projetos:
         - dominios/captacao-de-projetos/README.md

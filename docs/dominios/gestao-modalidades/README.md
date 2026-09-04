@@ -1,1 +1,1 @@
-# D007 - Gestão de Modalidades
+# Gestão de Modalidades

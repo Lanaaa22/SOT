@@ -1,4 +1,4 @@
-# D003 - Acompanhamento de Projeto
+# Acompanhamento de Projeto
 
 ## 1. Descrição do Domínio
 

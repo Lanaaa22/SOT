@@ -1,1 +1,1 @@
-# D006 - Gestão de Editais
+# Gestão de Editais

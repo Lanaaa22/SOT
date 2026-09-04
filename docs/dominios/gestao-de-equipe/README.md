@@ -1,4 +1,4 @@
-# D002 - Gestão de Equipe
+# Gestão de Equipe
 
 ## 1. Descrição do Domínio
 
