@@ -49,7 +49,7 @@ Ele atende a dois pilares fundamentais:
 
 * **Tela:** `Monitorar Liberação Das Áreas`
   * **Funcionalidade:** `EPIC-03` (Monitorar Liberação de Editais)
-  * **Aba:** `Gerar Folha`
+  * **Aba:** `Gerar Folha` (Acessada ao clicar em `Prosseguir para geração`)
     * **Funcionalidade:** `EPIC-04` (Gestão de Folhas de Pagamento)
 
 * **Tela:** `Listar Folhas`
