@@ -16,7 +16,7 @@ Ele atende a dois pilares fundamentais:
 
 | EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
-| **EPIC-01** | Edição de Calendário de Pagamento | Permite configurar e manter o calendário anual com os marcos de solicitação de bolsas (M1), geração da folha (M2) e data de pagamento (M3) para cada mês de competência. |
+| **EPIC-01** | Edição de Calendário de Pagamento | Permite configurar e manter o calendário anual com os marcos de solicitação de bolsas (M1), avaliação de documentos, geração da folha (M2) e data de pagamento (M3) para cada mês de competência. |
 | **EPIC-02** | Liberar Edital para Pagamento | Permite que a área técnica responsável revise os bolsistas e projetos vinculados ao edital na competência e autorize ou negue a inclusão do edital na folha de pagamento mensal. |
 | **EPIC-03** | Monitorar Liberação de Editais | Permite acompanhar em tempo real o status de liberação dos editais pelas diferentes áreas técnicas da FAPES, identificando pendências antes da geração da folha. |
 | **EPIC-04** | Gestão de Folhas de Pagamento | Permite aos gestores listar as folhas de pagamento geradas, consultar o detalhamento analítico de valores e beneficiários por edital e disparar a geração da folha da competência. |
