@@ -26,7 +26,8 @@ O domínio de **Gestão de Equipe** é responsável por gerenciar a composição
 
 ### Front-office (Coordenador)
 
-* **Menu Lateral > Minha Equipe > Bolsistas do Projeto**
+**Menu Lateral > Minha Equipe > Bolsistas do Projeto**
+
   * **Tela:** `Ações > Solicitar Bolsa`
     * **Funcionalidade:** `EPIC-01` (Criar Solicitação)
   * **Tela:** `Ações > Adicionar Voluntário`
@@ -40,19 +41,22 @@ O domínio de **Gestão de Equipe** é responsável por gerenciar a composição
 
 ### Front-office (Bolsista)
 
-* **Menu Lateral > Minhas Informações**
+**Menu Lateral > Minhas Informações**
+
   * **Tela:** `Meus Documentos`
     * **Funcionalidade:** `EPIC-02` (Adicionar Documentos na Solicitação)
 
 ### Front-office (Voluntário)
 
-* **Página Inicial**
+**Página Inicial**
+
   * **Tela:** `Convite de Voluntariado`
     * **Funcionalidade:** `EPIC-06` (Aceitar Voluntariado)
 
 ### Back-office (FAPES / Gestor)
 
-* **Menu Principal > Gestão de Bolsa > Visualizar Pendências**
+**Menu Principal > Gestão de Bolsa > Visualizar Pendências**
+
   * **Tela:** `Visualizar Pendências (Listagem e Filtros)`
     * **Funcionalidade:** `EPIC-07` (Visualizar Situação de Bolsas)
     * **Tela:** `Documentos do Bolsista` (Acessada ao clicar no ícone de visualização na listagem)
