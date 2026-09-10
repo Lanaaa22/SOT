@@ -25,9 +25,11 @@ Este documento apresenta o fluxo oficial do processo de **Solicitação de Bolsa
 
 | Raia / Ator | Elemento | Tipo BPMN | Descrição da Atividade / Regra |
 | :--- | :--- | :--- | :--- |
-| **Coordenador** | `Solicitar Bolsa` | Evento de Início | O coordenador inicia o processo criando a solicitação e indicando o bolsista. |
-| **Bolsista** | `Adicionar Documentos na Solicitação` | Tarefa | O bolsista insere os documentos comprobatórios e dados exigidos. |
-| **Coordenador** | `Submeter Solicitação` | Tarefa | O coordenador revisa os dados e envia formalmente a solicitação à FAPES. |
-| **Gestor Fapes** | `Avaliar Solicitação` | Tarefa | A equipe técnica da FAPES faz a análise de conformidade da solicitação. |
-| **Gestor Fapes** | `Documentação está válida?` | Decisão (Gateway) | • **Sim:** Segue para implementação da bolsa.<br>• **Não:** Retorna para o bolsista corrigir a documentação. |
-| **Bolsista** | `Bolsa Implementada` | Evento de Fim | Encerramento do fluxo com a implementação e ativação da bolsa no projeto. |
+| **Coordenador** | `Solicitar Bolsa` | Evento de Início | O coordenador inicia o processo criando a solicitação, definindo modalidade/vigência e indicando o bolsista. |
+| **Bolsista** | `Adicionar Documentos` | Tarefa | O bolsista insere os documentos comprobatórios, preenche dados complementares e aceita o Termo de Responsabilidade. |
+| **Bolsista** | `Documentos foram enviados no prazo?` | Decisão (Gateway) | • **Sim:** O bolsista anexa a documentação a tempo; segue para submissão pelo coordenador.<br>• **Não:** O prazo expira sem o envio da documentação; encerra o processo como não implementado. |
+| **Coordenador** | `Submeter Solicitação` | Tarefa | O coordenador revisa as informações e documentos enviados pelo bolsista e submete formalmente à FAPES. |
+| **Gestor Fapes** | `Avaliar Solicitação` | Tarefa | A equipe técnica da FAPES realiza a análise de conformidade da solicitação e dos documentos anexados. |
+| **Gestor Fapes** | `Qual o resultado da avaliação?` | Decisão (Gateway) | • **Aprovada:** A documentação está válida e regular; segue para implementação da bolsa.<br>• **Com pendência:** Há inconformidades sanáveis; retorna para o bolsista corrigir/reenviar os documentos.<br>• **Documentos recusados:** A solicitação é indeferida definitivamente pela FAPES; encerra o processo como não implementado. |
+| **Bolsista** | `Bolsa Implementada` | Evento de Fim | Encerramento do fluxo com sucesso: a bolsa é homologada, implementada e ativada no projeto. |
+| **Bolsista** | `Bolsa Não Implementada` | Evento de Fim | Encerramento do fluxo sem sucesso: ocorre caso o bolsista não envie os documentos no prazo ou caso a FAPES recuse a documentação em definitivo. |

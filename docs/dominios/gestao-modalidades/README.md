@@ -1,8 +1,8 @@
-# Gestão de Modalidades
+# Gestão de Modalidades / Níveis de Bolsa
 
 ## 1. Descrição do Domínio
 
-O domínio de **Gestão de Modalidades** é responsável por estruturar todas as modalidades de bolsas concedidas pela FAPES, seus respectivos níveis de remuneração, versões e critérios de elegibilidade. Ele centraliza as regras que definem os valores pagos, a carga horária e as exigências documentais e acadêmicas necessárias para a concessão de bolsas no âmbito dos projetos fomentados.
+O domínio de **Gestão de Modalidades / Níveis de Bolsa** é responsável por estruturar todas as modalidades de bolsas concedidas pela FAPES, seus respectivos níveis de remuneração, versões e critérios de elegibilidade. Ele centraliza as regras que definem os valores pagos, a carga horária e as exigências documentais e acadêmicas necessárias para a concessão de bolsas no âmbito dos projetos fomentados.
 
 Ele atende a dois pilares fundamentais:
 
