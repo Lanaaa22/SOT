@@ -86,4 +86,4 @@ Ele atende a dois pilares fundamentais:
 * **Tela:** `Editais`
   * **Funcionalidade:** `EPIC-09` (Cadastrar e Gerenciar Editais)
   * **Tela:** `Editar Edital`
-    * **Funcionalidade:** `EPIC-09` (Cadastrar e Gerenciar Editais)
+    * **Funcionalidade:** `EPIC-09` (Cadastrar e Gerenciar Editais) 
