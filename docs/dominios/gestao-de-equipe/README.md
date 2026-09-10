@@ -19,6 +19,7 @@ O domínio de **Gestão de Equipe** é responsável por gerenciar a composição
 | **EPIC-07** | Visualizar Situação de Bolsas | Permitir que os gestores e analistas da FAPES monitorem a situação geral das bolsas, indicadores, solicitações pendentes, aprovadas e reprovadas por edital e projeto. |
 | **EPIC-08** | Estender Bolsa | Permitir a solicitação de aditivo/prorrogação do período de vigência de bolsas ativas no projeto. |
 | **EPIC-09** | Cancelar Bolsa | Permitir que o Coordenador solicite o cancelamento e encerramento antecipado do vínculo de uma bolsa ativa ou a finalização da atuação de um voluntário no projeto. |
+| **EPIC-10** | Acompanhar Pagamentos da Equipe | Permitir ao coordenador consultar, filtrar por bolsista/ano/modalidade/status e acompanhar o extrato consolidado e a situação de pagamentos das bolsas de toda a equipe do projeto. |
 
 ---
 
@@ -26,36 +27,36 @@ O domínio de **Gestão de Equipe** é responsável por gerenciar a composição
 
 ### Front-office (Coordenador)
 
-**Menu Lateral > Minha Equipe > Bolsistas do Projeto**
+**Menu Lateral > Gerenciamento > Minha equipe**
 
-  * **Tela:** `Ações > Solicitar Bolsa`
-    * **Funcionalidade:** `EPIC-01` (Criar Solicitação)
-  * **Tela:** `Ações > Adicionar Voluntário`
-    * **Funcionalidade:** `EPIC-05` (Adicionar Voluntário)
-  * **Tela:** `Bolsistas do Projeto`
-    * **Ação Solicitar Bolsa:** `EPIC-01` (Criar Solicitação)
-    * **Ação Submeter Solicitação:** `EPIC-03` (Submeter Solicitação)
-    * **Ação Adicionar Voluntário:** `EPIC-05` (Adicionar Voluntário)
-    * **Ação Estender Bolsa:** `EPIC-08` (Estender Bolsa)
-    * **Ação Cancelar Bolsa:** `EPIC-09` (Cancelar Bolsa)
+  * **Aba:** `Informações das Bolsas`
+    * Painel de indicadores de bolsas da equipe (orçamento, cotas ativas, planejadas, utilizadas e disponíveis, modalidades e gráfico de tendência).
+  * **Aba:** `Bolsistas do Projeto`
+    * **Menu Ações > Solicitar Bolsa:** `EPIC-01` (Criar Solicitação)
+    * **Menu Ações > Adicionar Voluntário:** `EPIC-05` (Adicionar Voluntário)
+    * **Ações da Tabela > Submeter Solicitação:** `EPIC-03` (Submeter Solicitação)
+    * **Ações da Tabela > Estender Bolsa:** `EPIC-08` (Estender Bolsa)
+    * **Ações da Tabela > Cancelar Bolsa:** `EPIC-09` (Cancelar Bolsa)
+  * **Aba:** `Pagamentos`
+    * **Funcionalidade:** `EPIC-10` (Acompanhar Pagamentos da Equipe)
 
 ### Front-office (Bolsista)
 
-**Menu Lateral > Minhas Informações**
+**Menu Lateral > Meu Perfil > Minhas Informações**
 
-  * **Tela:** `Meus Documentos`
+  * **Aba:** `Meus Documentos`
     * **Funcionalidade:** `EPIC-02` (Adicionar Documentos na Solicitação)
 
 ### Front-office (Voluntário)
 
-**Página Inicial**
+**Menu Lateral > Início**
 
-  * **Tela:** `Convite de Voluntariado`
+  * **Card:** `Convite de Voluntariado`
     * **Funcionalidade:** `EPIC-06` (Aceitar Voluntariado)
 
 ### Back-office (FAPES / Gestor)
 
-**Menu Principal > Gestão de Bolsa > Visualizar Pendências**
+**Menu Lateral > Gestão de Bolsas > Visualizar Pendências**
 
   * **Tela:** `Visualizar Pendências (Listagem e Filtros)`
     * **Funcionalidade:** `EPIC-07` (Visualizar Situação de Bolsas)

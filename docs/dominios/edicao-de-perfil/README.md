@@ -18,9 +18,9 @@ Ele atende a dois pilares fundamentais:
 | :--- | :--- | :--- |
 | **EPIC-01** | Informar Dados Pessoais, Endereço e Conta Banestes | Permite ao bolsista/usuário consultar e atualizar seus dados pessoais, contato, escolaridade, currículo Lattes e endereço residencial, além de vincular sua conta-corrente Banestes existente ou selecionar agência para abertura/cadastro de conta para viabilizar pagamentos. |
 | **EPIC-02** | Informar Documentos e Termo de Responsabilidade | Permite ao bolsista anexar os documentos exigidos para suas bolsas, acompanhar o status de avaliação e gerar o Termo de Responsabilidade após preenchimento de declarações. |
-| **EPIC-03** | Consulta ao Dashboard da Pessoa Física (Gestor) | Permite ao gestor visualizar o painel consolidado com o resumo geral, bolsas ativas/encerradas, projetos vinculados e contadores do indivíduo selecionado. |
-| **EPIC-04** | Visualização e Importação de Currículo Lattes (Gestor) | Permite ao gestor visualizar a produção acadêmica e dados do currículo Lattes da pessoa física, viabilizando a importação ou sincronização direta caso o currículo ainda não tenha sido importado. |
-| **EPIC-05** | Gestão Cadastral e Histórico de Pessoa Física (Gestor) | Permite ao gestor buscar na listagem de pessoas, cadastrar, atualizar dados cadastrais, vincular responsável legal, gerenciar situação cadastral (ativação/suspensão) e auditar o histórico completo de alterações da pessoa física. |
+| **EPIC-03** | Consultar o Dashboard da Pessoa Física (Gestor) | Permite ao gestor visualizar o painel consolidado com o resumo geral, bolsas ativas/encerradas, projetos vinculados e contadores do indivíduo selecionado. |
+| **EPIC-04** | Visualizar e Importar Currículo Lattes (Gestor) | Permite ao gestor visualizar a produção acadêmica e dados do currículo Lattes da pessoa física, viabilizando a importação ou sincronização direta caso o currículo ainda não tenha sido importado. |
+| **EPIC-05** | Gerenciar Cadastro e Histórico de Pessoa Física (Gestor) | Permite ao gestor buscar na listagem de pessoas, cadastrar, atualizar dados cadastrais, vincular responsável legal, gerenciar situação cadastral (ativação/suspensão) e auditar o histórico completo de alterações da pessoa física. |
 
 ---
 
@@ -28,7 +28,7 @@ Ele atende a dois pilares fundamentais:
 
 ### Front-office (Bolsista / Usuário)
 
-**Menu Lateral > Minhas Informações**
+**Menu Lateral > Meu Perfil > Minhas Informações**
 
   * **Aba:** `Meus Dados`
     * **Funcionalidade:** `EPIC-01` (Informar Dados Pessoais, Endereço e Conta Banestes)
@@ -37,13 +37,13 @@ Ele atende a dois pilares fundamentais:
 
 ### Back-office (Gestor / Agência)
 
-**Menu Lateral > Pessoas**
+**Menu Lateral > Cadastros > Pessoas**
   
   * **Tela Principal:** `Pessoas Físicas` (Listagem geral para consulta, filtro e acesso aos registros)
     * **Tela:** `Detalhes` (Acessada ao selecionar um indivíduo da lista)
         * **Aba:** `Dashboard`
-            * **Funcionalidade:** `EPIC-03` (Consulta ao Dashboard da Pessoa Física)
+            * **Funcionalidade:** `EPIC-03` (Consultar o Dashboard da Pessoa Física)
         * **Aba:** `Lattes`
-            * **Funcionalidade:** `EPIC-04` (Visualização e Importação de Currículo Lattes)
+            * **Funcionalidade:** `EPIC-04` (Visualizar e Importar Currículo Lattes)
         * **Aba:** `Cadastro`
-            * **Funcionalidade:** `EPIC-05` (Gestão Cadastral e Histórico de Pessoa Física)
+            * **Funcionalidade:** `EPIC-05` (Gerenciar Cadastro e Histórico de Pessoa Física)
