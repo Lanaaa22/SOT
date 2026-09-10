@@ -15,9 +15,9 @@ O domínio de **Prestação de Contas** é responsável pelo controle e comprova
 | EPIC | Nome da Funcionalidade | Descrição / Objetivo |
 | :--- | :--- | :--- |
 | **EPIC-01** | Acrescentar Gasto | Permite ao coordenador do projeto detalhar e comprovar despesas vinculadas a transações de débito da conta do projeto, incluindo documentos fiscais (NF-e/NFS-e, diárias, passagens ou invoices), orçamentos de fornecedores concorrentes, classificação contábil por rubrica e submissão formal para análise da FAPES. |
-| **EPIC-02** | Visualizar Extrato | Permite ao coordenador do projeto consultar e acompanhar o extrato completo das transações bancárias da conta vinculada (débitos e créditos), filtrar movimentações por data, tipo, status e faixa de valor, e exportar a relação de lançamentos em formato CSV. |
+| **EPIC-02** | Visualizar Extrato do Projeto | Permite ao coordenador do projeto consultar e acompanhar o extrato completo das transações bancárias da conta vinculada (débitos e créditos), filtrar movimentações por data, tipo, status e faixa de valor, e exportar a relação de lançamentos em formato CSV. |
 | **EPIC-03** | Visualizar Progresso do Orçamento | Permite ao coordenador acompanhar visualmente o consumo orçamentário do projeto, monitorando os limites aprovados, valores executados e saldo disponível consolidado e por conta contábil em tempo real. |
-| **EPIC-04** | Acompanhamento (Gestor) | Permite aos gestores e analistas da FAPES gerenciar, filtrar e auditar as prestações de contas financeiras submetidas, analisar documentos fiscais e cotações, homologar aprovações, solicitar correções e revisões ou registrar negações fundamentadas. |
+| **EPIC-04** | Acompanhar (Gestor) | Permite aos gestores e analistas da FAPES gerenciar, filtrar e auditar as prestações de contas financeiras submetidas, analisar documentos fiscais e cotações, homologar aprovações, solicitar correções e revisões ou registrar negações fundamentadas. |
 
 ---
 
@@ -25,26 +25,26 @@ O domínio de **Prestação de Contas** é responsável pelo controle e comprova
 
 ### Front-office (Coordenador)
 
-**Menu Lateral > Financeiro**
+**Menu Lateral > Prestação de Contas > Financeiro**
 
-  * **Tela:** `Prestação Financeira (Visão Geral)`
-    * **Funcionalidade:** `EPIC-02 - Visualizar Extrato`
-    * **Funcionalidade:** `EPIC-03 - Visualizar Progresso do Orçamento`
-  * **Tela:** `Detalhes da Prestação`
-    * **Funcionalidade:** `EPIC-01 - Acrescentar Gasto`
+  * **Tela:** `Prestação de Contas Financeira`
+    * **Funcionalidade:** `EPIC-02` (Visualizar Extrato do Projeto)
+    * **Funcionalidade:** `EPIC-03` (Visualizar Progresso do Orçamento)
+  * **Tela:** `Detalhes`
+    * **Funcionalidade:** `EPIC-01` (Acrescentar Gasto)
   * **Tela:** `Classificar Crédito`
-    * **Funcionalidade:** `EPIC-01 - Acrescentar Gasto`
+    * **Funcionalidade:** `EPIC-01` (Acrescentar Gasto)
 
 ### Back-office (Gestor / Agência)
 
-**Menu Lateral > Financeiro**
+**Menu Lateral > Prestação de Contas > Financeiro**
 
   * **Tela:** `Listagem de Prestações Financeiras`
-    * **Funcionalidade:** `EPIC-04 - Acompanhamento (Gestor)`
+    * **Funcionalidade:** `EPIC-04` (Acompanhar (Gestor))
   * **Tela:** `Débitos`
-    * **Funcionalidade:** `EPIC-04 - Acompanhamento (Gestor)`
+    * **Funcionalidade:** `EPIC-04` (Acompanhar (Gestor))
   * **Tela / Visão:** `Créditos`
-    * **Funcionalidade:** `EPIC-04 - Acompanhamento (Gestor)`
+    * **Funcionalidade:** `EPIC-04` (Acompanhar (Gestor))
 
 ---
 

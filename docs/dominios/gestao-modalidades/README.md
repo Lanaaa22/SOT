@@ -1,14 +1,8 @@
-# Gestão de Modalidades
+# Gestão de Modalidades / Níveis de Bolsa
 
 ## 1. Descrição do Domínio
 
-O domínio de **Gestão de Modalidades** é responsável por estruturar todas as modalidades de bolsas concedidas pela FAPES, seus respectivos níveis de remuneração, versões e critérios de elegibilidade. Ele centraliza as regras que definem os valores pagos, a carga horária e as exigências documentais e acadêmicas necessárias para a concessão de bolsas no âmbito dos projetos fomentados.
-
-Ele atende a dois pilares fundamentais:
-
-- **Parametrização Normativa e Regulamentar (Back-office - Gestor / Analista FAPES):** Permite à equipe técnica da FAPES cadastrar e gerenciar as resoluções oficiais publicadas, definir o catálogo de requisitos e comprovantes exigidos e estruturar as modalidades de bolsas com controle rigoroso de versões, vigências e compatibilidades entre benefícios.
-
-- **Estruturação de Níveis e Critérios de Concessão (Back-office - Gestor / Analista FAPES):** Permite configurar e detalhar os diferentes níveis remuneratórios dentro de cada modalidade (valores mensais, moeda e carga horária semanal), além de vincular requisitos e comprovantes específicos a cada nível para validar a formação e a qualificação dos bolsistas.
+O domínio de **Gestão de Modalidades / Níveis de Bolsa** é responsável por estruturar todas as modalidades de bolsas concedidas pela FAPES, seus respectivos níveis de remuneração, versões e critérios de elegibilidade. Por meio do Back-office (Gestor / Analista FAPES), a equipe técnica centraliza o cadastro das resoluções, modalidades, níveis e versões, e os critérios de bolsa, garantindo o controle rigoroso, compatibilidade e a validação das exigências documentais e acadêmicas para a concessão de bolsas nos projetos fomentados.
 
 ---
 
@@ -16,10 +10,10 @@ Ele atende a dois pilares fundamentais:
 
 | EPIC | Nome da Funcionalidade | Descrição / Objetivo |
 | :--- | :--- | :--- |
-| **EPIC-01** | Gestão de Modalidades e Níveis de Bolsa | Permitir a consulta, pesquisa e visualização detalhada das modalidades de bolsa da FAPES, acompanhando suas versões ativas, versões em edição e os níveis remuneratórios configurados. |
-| **EPIC-02** | Cadastrar Modalidade, Níveis e Versões | Permitir a criação de modalidades de bolsa, o gerenciamento de versões com vigência e redução por vínculo, a configuração de níveis remuneratórios (valores, moeda e carga horária) e a ativação de novas versões. |
-| **EPIC-03** | Cadastrar Resolução | Permitir o cadastro, consulta, edição e exclusão das resoluções normativas oficiais da FAPES (número, data, ementa, link de publicação e número E-Docs) que regulamentam e dão respaldo legal às modalidades de bolsa. |
-| **EPIC-04** | Cadastrar Requisitos de Bolsa | Permitir a inclusão, consulta, edição e exclusão dos requisitos e documentos comprobatórios de elegibilidade (acadêmicos, profissionais e perenes) exigidos para concessão de bolsas nas modalidades e níveis. |
+| **EPIC-01** | Gerenciar Requisitos de Bolsa (CRUD) | Permitir a consulta, pesquisa, inclusão, edição e exclusão dos requisitos e documentos comprobatórios de elegibilidade (acadêmicos, profissionais e perenes) exigidos para concessão de bolsas nas modalidades e níveis. |
+| **EPIC-02** | Gerenciar Resoluções (CRUD) | Permitir a consulta, pesquisa, cadastro, edição e exclusão das resoluções normativas oficiais da FAPES (número, data, ementa, link de publicação e número E-Docs) que regulamentam e dão respaldo legal às modalidades de bolsa, bem como o download da publicação oficial em PDF. |
+| **EPIC-03** | Gerenciar Modalidades, Níveis e Versões (CRUD) | Permitir a consulta, pesquisa, criação, edição e ativação de modalidades de bolsa da FAPES, gerenciamento de versões com vigência e redução por vínculo, e configuração de níveis remuneratórios (valores, moeda e carga horária). |
+| **EPIC-04** | Visualizar Pendências | Permitir ao gestor da FAPES consultar, filtrar e auditar as pendências de bolsas e documentos comprobatórios submetidos nos editais e projetos, acompanhando status de aprovação e avaliando documentações para aprovação, reprovação ou solicitação de revisão. |
 
 ---
 
@@ -27,40 +21,47 @@ Ele atende a dois pilares fundamentais:
 
 ### Back-office (Gestor / Analista FAPES)
 
-**Menu Lateral > Gestão de Bolsas > Modalidades**
+**Menu Lateral > Gestão de Bolsas > Requisitos**
 
-* **Tela:** `Modalidades (Listagem e Filtros)`
-  * **Funcionalidade:** `EPIC-01` (Gestão de Modalidades e Níveis de Bolsa)
+* **Tela:** `Requisitos (Listagem e Filtros)`
+  * **Funcionalidade:** `EPIC-01` (Gerenciar Requisitos de Bolsa (CRUD))
 
-* **Tela:** `Cadastrar Modalidade`
-  * **Funcionalidade:** `EPIC-02` (Cadastrar Modalidade, Níveis e Versões)
+* **Tela:** `Incluir Requisito`
+  * **Funcionalidade:** `EPIC-01` (Gerenciar Requisitos de Bolsa (CRUD))
 
-* **Tela:** `Editar Modalidade`
-  * **Funcionalidade:** `EPIC-01` (Gestão de Modalidades e Níveis de Bolsa)
-  * **Funcionalidade:** `EPIC-02` (Cadastrar Modalidade, Níveis e Versões)
-  * **Seção:** `Requisitos da Modalidade`
-    * **Funcionalidade:** `EPIC-02` (Cadastrar Modalidade, Níveis e Versões)
-  * **Seção:** `Níveis da Modalidade`
-    * **Funcionalidade:** `EPIC-02` (Cadastrar Modalidade, Níveis e Versões)
+* **Tela:** `Editar Requisito`
+  * **Funcionalidade:** `EPIC-01` (Gerenciar Requisitos de Bolsa (CRUD))
 
 **Menu Lateral > Gestão de Bolsas > Resoluções**
 
 * **Tela:** `Resoluções (Listagem e Filtros)`
-  * **Funcionalidade:** `EPIC-03` (Cadastrar Resolução)
+  * **Funcionalidade:** `EPIC-02` (Gerenciar Resoluções (CRUD))
 
 * **Tela:** `Incluir Resolução`
-  * **Funcionalidade:** `EPIC-03` (Cadastrar Resolução)
+  * **Funcionalidade:** `EPIC-02` (Gerenciar Resoluções (CRUD))
 
 * **Tela:** `Editar Resolução`
-  * **Funcionalidade:** `EPIC-03` (Cadastrar Resolução)
+  * **Funcionalidade:** `EPIC-02` (Gerenciar Resoluções (CRUD))
 
-**Menu Lateral > Gestão de Bolsas > Requisitos**
+**Menu Lateral > Gestão de Bolsas > Modalidades**
 
-* **Tela:** `Requisitos (Listagem e Filtros)`
-  * **Funcionalidade:** `EPIC-04` (Cadastrar Requisitos de Bolsa)
+* **Tela:** `Modalidades (Listagem e Filtros)`
+  * **Funcionalidade:** `EPIC-03` (Gerenciar Modalidades, Níveis e Versões (CRUD))
 
-* **Tela:** `Incluir Requisito`
-  * **Funcionalidade:** `EPIC-04` (Cadastrar Requisitos de Bolsa)
+* **Tela:** `Cadastrar Modalidade`
+  * **Funcionalidade:** `EPIC-03` (Gerenciar Modalidades, Níveis e Versões (CRUD))
 
-* **Tela:** `Editar Requisito`
-  * **Funcionalidade:** `EPIC-04` (Cadastrar Requisitos de Bolsa)
+* **Tela:** `Editar Modalidade`
+  * **Funcionalidade:** `EPIC-03` (Gerenciar Modalidades, Níveis e Versões (CRUD))
+  * **Seção:** `Requisitos da Modalidade`
+    * **Funcionalidade:** `EPIC-03` (Gerenciar Modalidades, Níveis e Versões (CRUD))
+  * **Seção:** `Níveis da Modalidade`
+    * **Funcionalidade:** `EPIC-03` (Gerenciar Modalidades, Níveis e Versões (CRUD))
+
+**Menu Lateral > Gestão de Bolsas > Visualizar Pendências**
+
+* **Tela:** `Visualizar Pendências (Listagem e Filtros)`
+  * **Funcionalidade:** `EPIC-04` (Visualizar Pendências)
+
+* **Tela:** `Documentos do Bolsista`
+  * **Funcionalidade:** `EPIC-04` (Visualizar Pendências)

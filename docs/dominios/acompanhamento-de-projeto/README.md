@@ -19,7 +19,7 @@ Ele atende a dois pilares fundamentais:
 | **EPIC-01** | Acompanhar Pagamento de Bolsa (Bolsista) | Permite ao bolsista consultar, filtrar por projeto/ano/status e acompanhar o extrato de parcelas pagas e previstas da sua bolsa, com opção de exportação dos registros em CSV. |
 | **EPIC-02** | Consultar Dados da Bolsa no Projeto (Bolsista) | Permite ao bolsista visualizar os dados consolidados da sua bolsa ativa no projeto (modalidade, vigência e orientador) e o detalhamento das atividades do plano de trabalho. |
 | **EPIC-03** | Consultar Dados e Indicadores do Projeto (Coordenador) | Permite ao coordenador acompanhar o resumo geral do projeto, edital de origem, datas de início/fim de vigência, resumo financeiro, rubricas e detalhamento orçamentário. |
-| **EPIC-04** | Remanejamento de Recursos e Cotas de Bolsa (Coordenador / Gestor) | Permite ao coordenador ou gestor ajustar quantidades de cotas por nível/modalidade de bolsa, simular impactos no saldo orçamentário, confirmar remanejamentos e auditar o histórico de alterações. |
+| **EPIC-04** | Remanejar Recursos e Cotas de Bolsa (Coordenador / Gestor) | Permite ao coordenador ou gestor ajustar quantidades de cotas por nível/modalidade de bolsa, simular impactos no saldo orçamentário, confirmar remanejamentos e auditar o histórico de alterações. |
 
 ---
 
@@ -32,24 +32,24 @@ Ele atende a dois pilares fundamentais:
 * **Tela:** `Portal Fapes` / `Informações da Bolsa`
   * **Funcionalidade:** `EPIC-02` (Consultar Dados da Bolsa no Projeto)
 
-**Menu Lateral > Meus Pagamentos**
+**Menu Lateral > Meu Perfil > Meus Pagamentos**
 
 * **Tela:** `Pagamentos`
   * **Funcionalidade:** `EPIC-01` (Acompanhar Pagamento de Bolsa)
 
-**Menu Lateral > Meu Projeto**
+**Menu Lateral > Gerenciamento > Meu Projeto**
 
 * **Tela:** `Meu Projeto`
   * **Funcionalidade:** `EPIC-03` (Consultar Dados e Indicadores do Projeto)
 
-**Menu Lateral > Remanejamento**
+**Menu Lateral > Gerenciamento > Remanejamento**
 
 * **Tela:** `Remanejamento`
-  * **Funcionalidade:** `EPIC-04` (Remanejamento de Recursos e Cotas de Bolsa)
+  * **Funcionalidade:** `EPIC-04` (Remanejar Recursos e Cotas de Bolsa)
 
 ### Back-office (Gestor / Agência)
 
-**Menu Lateral > Remanejamento**
+**Menu Lateral > Importação > Remanejamento**
 
 * **Tela:** `Remanejamento` (Pesquisa e seleção do projeto na base)
-  * **Funcionalidade:** `EPIC-04` (Remanejamento de Recursos e Cotas de Bolsa)
+  * **Funcionalidade:** `EPIC-04` (Remanejar Recursos e Cotas de Bolsa)
