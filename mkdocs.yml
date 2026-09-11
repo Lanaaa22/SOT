@@ -68,6 +68,10 @@ nav:
         - dominios/edicao-de-perfil/EPIC-01.md
       - D002 - Gestão de Modalidades / Níveis de Bolsa:
         - dominios/gestao-modalidades/README.md
+        - dominios/gestao-modalidades/EPIC-01.md
+        - dominios/gestao-modalidades/EPIC-02.md
+        - dominios/gestao-modalidades/EPIC-03.md
+        - dominios/gestao-modalidades/EPIC-04.md
       - D003 - Gestão de Equipe:
         - dominios/gestao-de-equipe/README.md
         - dominios/gestao-de-equipe/diagrama-BPMN-bolsista.md

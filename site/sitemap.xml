@@ -2,42 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://leds-conectafapes/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/acompanhamento-de-projeto/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/captacao-de-projetos/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/edicao-de-perfil/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://leds-conectafapes/dominios/edicao-de-perfil/EPIC-01/</loc>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/gerir-pagamentos/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/gestao-de-equipe/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/gestao-de-equipe/diagrama-BPMN-bolsista/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/gestao-de-equipe/diagrama-BPMN-voluntario/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/gestao-modalidades/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://leds-conectafapes/dominios/gestao-modalidades/EPIC-01/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://leds-conectafapes/dominios/gestao-modalidades/EPIC-02/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://leds-conectafapes/dominios/gestao-modalidades/EPIC-03/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://leds-conectafapes/dominios/gestao-modalidades/EPIC-04/</loc>
+         <lastmod>2026-09-11</lastmod>
     </url>
     <url>
          <loc>https://leds-conectafapes/dominios/prestacao-de-contas/</loc>
-         <lastmod>2026-09-10</lastmod>
+         <lastmod>2026-09-11</lastmod>
     </url>
 </urlset>
