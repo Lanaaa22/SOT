@@ -14,7 +14,7 @@ Ele atende a dois pilares fundamentais:
 
 ## 2. EPICs (Funcionalidades)
 
-| EPIC | Nome da Funcionalidade | Descrição / Objetivo |
+| EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
 | **EPIC-01** | Informar Dados Pessoais, Endereço e Conta Banestes | Permite ao bolsista/usuário consultar e atualizar seus dados pessoais, contato, escolaridade, currículo Lattes e endereço residencial, além de vincular sua conta-corrente Banestes existente ou selecionar agência para abertura/cadastro de conta para viabilizar pagamentos. |
 | **EPIC-02** | Informar Documentos e Termo de Responsabilidade | Permite ao bolsista anexar os documentos exigidos para suas bolsas, acompanhar o status de avaliação e gerar o Termo de Responsabilidade após preenchimento de declarações. |

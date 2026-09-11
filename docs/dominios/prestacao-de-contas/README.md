@@ -12,7 +12,7 @@ O domínio de **Prestação de Contas** é responsável pelo controle e comprova
 
 ## 2. EPICs (Funcionalidades)
 
-| EPIC | Nome da Funcionalidade | Descrição / Objetivo |
+| EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
 | **EPIC-01** | Acrescentar Gasto | Permite ao coordenador do projeto detalhar e comprovar despesas vinculadas a transações de débito da conta do projeto, incluindo documentos fiscais (NF-e/NFS-e, diárias, passagens ou invoices), orçamentos de fornecedores concorrentes, classificação contábil por rubrica e submissão formal para análise da FAPES. |
 | **EPIC-02** | Visualizar Extrato do Projeto | Permite ao coordenador do projeto consultar e acompanhar o extrato completo das transações bancárias da conta vinculada (débitos e créditos), filtrar movimentações por data, tipo, status e faixa de valor, e exportar a relação de lançamentos em formato CSV. |

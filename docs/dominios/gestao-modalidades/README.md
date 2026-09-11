@@ -8,7 +8,7 @@ O domínio de **Gestão de Modalidades / Níveis de Bolsa** é responsável por 
 
 ## 2. EPICs (Funcionalidades)
 
-| EPIC | Nome da Funcionalidade | Descrição / Objetivo |
+| EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
 | **EPIC-01** | Gerenciar Requisitos de Bolsa (CRUD) | Permitir a consulta, pesquisa, inclusão, edição e exclusão dos requisitos e documentos comprobatórios de elegibilidade (acadêmicos, profissionais e perenes) exigidos para concessão de bolsas nas modalidades e níveis. |
 | **EPIC-02** | Gerenciar Resoluções (CRUD) | Permitir a consulta, pesquisa, cadastro, edição e exclusão das resoluções normativas oficiais da FAPES (número, data, ementa, link de publicação e número E-Docs) que regulamentam e dão respaldo legal às modalidades de bolsa, bem como o download da publicação oficial em PDF. |

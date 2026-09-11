@@ -14,7 +14,7 @@ Ele atende a dois pilares fundamentais:
 
 ## 2. EPICs (Funcionalidades)
 
-| EPIC | Nome da Funcionalidade | Descrição / Objetivo |
+| EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
 | **EPIC-01** | Acompanhar Pagamento de Bolsa (Bolsista) | Permite ao bolsista consultar, filtrar por projeto/ano/status e acompanhar o extrato de parcelas pagas e previstas da sua bolsa, com opção de exportação dos registros em CSV. |
 | **EPIC-02** | Consultar Dados da Bolsa no Projeto (Bolsista) | Permite ao bolsista visualizar os dados consolidados da sua bolsa ativa no projeto (modalidade, vigência e orientador) e o detalhamento das atividades do plano de trabalho. |

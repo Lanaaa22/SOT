@@ -8,7 +8,7 @@ O domínio de **Gestão de Equipe** é responsável por gerenciar a composição
 
 ## 2. EPICs (Funcionalidades)
 
-| EPIC | Nome da Funcionalidade | Descrição / Objetivo |
+| EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
 | **EPIC-01** | Criar Solicitação | Permitir que o Coordenador crie e configure a solicitação de bolsa para um membro da equipe no projeto, definindo modalidade, vigência, cotas e dados iniciais do bolsista. |
 | **EPIC-02** | Adicionar Documentos na Solicitação | Permitir que o Bolsista informe seus dados complementares, anexe os documentos comprobatórios exigidos pela modalidade e aceite o Termo de Responsabilidade. |

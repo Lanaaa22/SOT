@@ -8,7 +8,7 @@ O domínio de **Captação de Projetos** é responsável pelo planejamento estra
 
 ## 2. EPICs (Funcionalidades)
 
-| EPIC | Nome da Funcionalidade | Descrição / Objetivo |
+| EPIC | Nome da Funcionalidade | Descrição |
 | :--- | :--- | :--- |
 | **EPIC-01** | Cadastrar Parcerias (CRUD) | Permitir o cadastro, acompanhamento, aditivação de vigência e aporte, suspensão, reativação e encerramento de parcerias firmadas com instituições parceiras. |
 | **EPIC-02** | Cadastrar Planejamento Estratégico (CRUD) | Permitir a criação, estruturação e publicação de planejamentos estratégicos, definindo seus objetivos, períodos de vigência e eixos temáticos vinculados. |

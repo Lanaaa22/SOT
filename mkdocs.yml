@@ -65,6 +65,7 @@ nav:
   - Domínios: 
       - D001 - Edição de Perfil:
         - dominios/edicao-de-perfil/README.md
+        - dominios/edicao-de-perfil/EPIC-01.md
       - D002 - Gestão de Modalidades / Níveis de Bolsa:
         - dominios/gestao-modalidades/README.md
       - D003 - Gestão de Equipe:
