@@ -1,0 +1,7 @@
+{
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Sempre gere mensagens de commit seguindo o padrão Conventional Commits (ex: docs:, chore:, feat:, fix:) em português do Brasil (pt-br). A primeira linha deve ser curta, direta e objetiva (máximo 72 caracteres), iniciando com letra minúscula após o prefixo e sem ponto final no título."
+    }
+  ]
+}
