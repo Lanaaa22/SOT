@@ -14,7 +14,7 @@ Por meio desta funcionalidade, o gestor realiza:
 6. **Ciclo de Vida e Versionamento:** Criação de novas versões em rascunho a partir da versão vigente e posterior ativação formal da versão, promovendo-a para uso em editais e arquivando a versão anterior no histórico.
 
 As configurações estabelecidas neste EPIC definem as regras e valores que serão utilizados na elaboração de editais e na concessão de bolsas em projetos fomentados.
-
+teste
 ---
 
 ## 2. Fluxo de Navegação
