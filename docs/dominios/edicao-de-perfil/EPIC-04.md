@@ -61,3 +61,23 @@ Por meio desta funcionalidade, o gestor pode:
 | `POST` | `/api/curriculum/pessoas/{id}/curriculo/sincronizacoes` | Sincroniza e atualiza os dados acadêmicos a partir da Plataforma Lattes sob demanda (cooldown de 1h) | `leds-conectafapes-backend-admin` / `CurriculoController` |
 | `POST` | `/api/curriculum/pessoas/{id}/curriculo` | Vincula um número Lattes informado manualmente e realiza a importação da primeira versão | `leds-conectafapes-backend-admin` / `CurriculoController` |
 | `POST` | `/api/curriculum/pessoas/{id}/curriculo/identificador` | Consulta o serviço do CNPq por CPF, nome e data de nascimento para localizar o número Lattes | `leds-conectafapes-backend-admin` / `CurriculoController` |
+
+---
+
+## 5. Referências
+
+- **Domínio SOT:**
+    - [`docs/dominios/edicao-de-perfil/README.md`](https://github.com/Lanaaa22/SOT/blob/main/docs/dominios/edicao-de-perfil/README.md)
+- **Front-end (`leds-conectafapes-frontend-backoffice`):**
+    - [`src/modules/Pessoas/components/CurriculoLattes.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/components/CurriculoLattes.vue)
+    - [`src/modules/Pessoas/composables/usePessoaCurriculo.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/composables/usePessoaCurriculo.ts)
+    - [`src/modules/Pessoas/api/services/PessoaService.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/api/services/PessoaService.ts)
+    - [`src/modules/Pessoas/view/DetalhesPessoa.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/view/DetalhesPessoa.vue)
+- **Back-end (`leds-conectafapes-backend-admin`):**
+    - [`src/ConectaFapes/ConectaFapes.WebApi/Controllers/Curriculum/CurriculoController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.WebApi/Controllers/Curriculum/CurriculoController.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/ImportarCurriculoAutomatico/ImportarCurriculoAutomaticoService.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/ImportarCurriculoAutomatico/ImportarCurriculoAutomaticoService.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/SincronizarCurriculo/SincronizarCurriculoService.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/SincronizarCurriculo/SincronizarCurriculoService.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/VincularCurriculo/VincularCurriculoService.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/VincularCurriculo/VincularCurriculoService.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/ObterCurriculo/ObterCurriculoService.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/ObterCurriculo/ObterCurriculoService.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/ObterCurriculo/ObterCurriculoDto.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/Curriculum/Curriculo/ObterCurriculo/ObterCurriculoDto.cs)
+

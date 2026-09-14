@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 .md-header {
   background: radial-gradient(circle at left, #1e293b, #429fb2 10%, #50cbde 20%, #429fb2 30%, #1e293b 50%, #262a30);
+}
+
+/* Tipografia geral e leitura */
+.md-typeset {
+  font-size: 0.8rem; /* Reduz suavemente o tamanho do texto (padrão do tema é 0.8rem) */
+  line-height: 1.6;
+}
+
+/* Espaçamento entre parágrafos */
+.md-typeset p {
+  margin-top: 0;
+  margin-bottom: 1.4em; /* Aumenta a distância entre parágrafos */
 }
 
 /* ==========================================================================
