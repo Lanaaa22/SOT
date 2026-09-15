@@ -70,3 +70,27 @@ Por meio desta funcionalidade, o usuário consulta e/ou gerencia:
 | `POST` | `/api/portalfapes/alocacao-bolsista/alterar/status/emavaliacao` | Finaliza a submissão dos documentos e altera a situação da bolsa para `EM_AVALIACAO` | `leds-conectafapes-backend-portal-fapes` / `AlocacaoBolsistaController` |
 | `GET` | `/api/gestaobolsa/documentos/requisitobolsa/alocacao/{id}` | Consulta os requisitos e status dos documentos sob a perspectiva da gestão/back-office | `leds-conectafapes-backend-admin` / `DocumentoMetadadoController` |
 | `GET` | `/api/gestaobolsa/documentos/carregardocumento` | Carrega o arquivo do documento metadado para auditoria e parecer técnico na FAPES | `leds-conectafapes-backend-admin` / `DocumentoMetadadoController` |
+
+---
+
+## 5. Referências
+
+- **Domínio SOT:**
+    - [`docs/dominios/edicao-de-perfil/README.md`](https://github.com/Lanaaa22/SOT/blob/main/docs/dominios/edicao-de-perfil/README.md)
+- **Front-end (`leds-conectafapes-frontoffice-frontend`):**
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/components/MeusDocumentos.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/components/MeusDocumentos.vue)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useMeusDocumentos.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useMeusDocumentos.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/Documento.service.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/Documento.service.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/components/EnviarDocumentosModal.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/components/EnviarDocumentosModal.vue)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/view/MinhasInformacoes.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/view/MinhasInformacoes.vue)
+- **Back-end (`leds-conectafapes-backend-portal-fapes`):**
+    - [`src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/AlocacaoBolsistaController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/AlocacaoBolsistaController.cs)
+    - [`src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/DocumentoController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/DocumentoController.cs)
+    - [`src/ConectaFapes/ConectaFapes.WebAPI/Controllers/CadastroModalidadesBolsas/RequisitoBolsaController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.WebAPI/Controllers/CadastroModalidadesBolsas/RequisitoBolsaController.cs)
+- **Back-end (`leds-conectafapes-backend-admin`):**
+    - [`src/ConectaFapes/ConectaFapes.WebApi/Controllers/GestaoBolsa/DocumentoMetadadoController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.WebApi/Controllers/GestaoBolsa/DocumentoMetadadoController.cs)
+    - [`src/ConectaFapes/ConectaFapes.WebApi/Controllers/ImportacaoEditais/AlocacaoBolsistaController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.WebApi/Controllers/ImportacaoEditais/AlocacaoBolsistaController.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/UseCases/GestaoBolsa/Entities/DocumentoCase/CarregarDocumento/CarregarDocumentoHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/UseCases/GestaoBolsa/Entities/DocumentoCase/CarregarDocumento/CarregarDocumentoHandler.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/UseCases/GestaoBolsa/Entities/DocumentoCase/RequisitosDocumentoCase/GetRequisitosDocumentoHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/UseCases/GestaoBolsa/Entities/DocumentoCase/RequisitosDocumentoCase/GetRequisitosDocumentoHandler.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/UseCases/ImportacaoEditais/AlocacaoBolsistaCase/SetStatusEmAvaliacaoAlocacaoBolsista/SetStatusEmAvaliacaoAlocacaoBolsistaHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/UseCases/ImportacaoEditais/AlocacaoBolsistaCase/SetStatusEmAvaliacaoAlocacaoBolsista/SetStatusEmAvaliacaoAlocacaoBolsistaHandler.cs)
+

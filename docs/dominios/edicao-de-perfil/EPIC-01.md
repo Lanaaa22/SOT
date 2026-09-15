@@ -63,3 +63,28 @@ Por meio desta funcionalidade, o usuário consulta e/ou atualiza:
 | `PUT` | `/api/importacaoedital/naturalidade/{id}` | Atualiza o registro de naturalidade da pessoa | `leds-conectafapes-backend-portal-fapes` / `NaturalidadeController` |
 | `POST` | `/api/importacaoedital/documento` | Cadastra documento de identificação pessoal (tipo, número, órgão emissor, UF e data) | `leds-conectafapes-backend-portal-fapes` / `DocumentoController` |
 | `PUT` | `/api/importacaoedital/documento/{id}` | Atualiza documento de identificação pessoal da pessoa | `leds-conectafapes-backend-portal-fapes` / `DocumentoController` |
+
+---
+
+## 5. Referências
+
+- **Domínio SOT:**
+    - [`docs/dominios/edicao-de-perfil/README.md`](https://github.com/Lanaaa22/SOT/blob/main/docs/dominios/edicao-de-perfil/README.md)
+- **Front-end (`leds-conectafapes-frontoffice-frontend`):**
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/view/MinhasInformacoes.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/view/MinhasInformacoes.vue)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/components/Form.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/components/Form.vue)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/UseMinhasInformacoesForm.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/UseMinhasInformacoesForm.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useMinhasInformacoesValidations.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useMinhasInformacoesValidations.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useMinhasInformacoesMappers.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useMinhasInformacoesMappers.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useSaveInformacoesUsuario.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/composables/useSaveInformacoesUsuario.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/MinhasInformacoesService.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/MinhasInformacoesService.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/DocumentoIdentificacao.service.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/DocumentoIdentificacao.service.ts)
+    - [`src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/meuPerfilService.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontoffice-frontend/blob/develop/src/modules/PortalCoordenador/resources/MinhasInformacoes/api/services/meuPerfilService.ts)
+- **Back-end (`leds-conectafapes-backend-portal-fapes`):**
+    - [`src/ConectaFapes/ConectaFapes.WebAPI/Controllers/PortalFapes/MeuPerfilController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.WebAPI/Controllers/PortalFapes/MeuPerfilController.cs)
+    - [`src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/NaturalidadeController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/NaturalidadeController.cs)
+    - [`src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/DocumentoController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.WebAPI/Controllers/ImportacaoEditais/DocumentoController.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/UseCases/PortalFapes/MeuPerfil/GetMeuPerfil/GetMeuPerfilHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.Application/UseCases/PortalFapes/MeuPerfil/GetMeuPerfil/GetMeuPerfilHandler.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/UseCases/PortalFapes/MeuPerfil/UpdateMeuPerfil/UpdateMeuPerfilHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.Application/UseCases/PortalFapes/MeuPerfil/UpdateMeuPerfil/UpdateMeuPerfilHandler.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/UseCases/PortalFapes/MeuPerfil/StatusCadastro/GetStatusCadastroHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-portal-fapes/blob/develop/src/ConectaFapes/ConectaFapes.Application/UseCases/PortalFapes/MeuPerfil/StatusCadastro/GetStatusCadastroHandler.cs)
+
