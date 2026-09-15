@@ -56,7 +56,6 @@ Por meio desta funcionalidade, o gestor consulta:
 - **RN04 - Apuração do Papel e Dados de Projetos:** Na listagem de projetos vinculados à pessoa física:
     * O papel do participante é categorizado dinamicamente como **Coordenador** caso o identificador da pessoa conste na lista de coordenadores do projeto; caso contrário, é categorizado como **Pesquisador**;
     * Caso o projeto não possua um programa ou edital associado cadastrado no banco de dados, o sistema exibe o rótulo de contingência *"Sem programa"*;
-    * O período de vigência é apresentado no padrão `DD/MM/YYYY - DD/MM/YYYY`, utilizando traço (`—`) para datas não preenchidas.
 
 ---
 
