@@ -56,7 +56,6 @@ Por meio desta funcionalidade, o gestor consulta:
 - **RN04 - Apuração do Papel e Dados de Projetos:** Na listagem de projetos vinculados à pessoa física:
     * O papel do participante é categorizado dinamicamente como **Coordenador** caso o identificador da pessoa conste na lista de coordenadores do projeto; caso contrário, é categorizado como **Pesquisador**;
     * Caso o projeto não possua um programa ou edital associado cadastrado no banco de dados, o sistema exibe o rótulo de contingência *"Sem programa"*;
-    * O período de vigência é apresentado no padrão `DD/MM/YYYY - DD/MM/YYYY`, utilizando traço (`—`) para datas não preenchidas.
 
 ---
 
@@ -67,3 +66,27 @@ Por meio desta funcionalidade, o gestor consulta:
 | `GET` | `/api/gestaocadastro/pessoafisica/{id}/dashboard` | Retorna os contadores resumidos, a relação de projetos e o histórico de bolsas da pessoa física | `leds-conectafapes-backend-admin` / `PessoaFisicaController` |
 | `GET` | `/api/gestaocadastro/pessoafisica/{id}` | Recupera os dados cadastrais básicos da pessoa física para alimentar o cabeçalho e navegação de detalhes | `leds-conectafapes-backend-admin` / `PessoaFisicaController` |
 | `POST` | `/api/gestaocadastro/pessoafisica/list` | Realiza a consulta paginada e filtrada de pessoas físicas na listagem principal do back-office | `leds-conectafapes-backend-admin` / `PessoaFisicaController` |
+
+---
+
+## 5. Referências
+
+- **Domínio SOT:**
+    - [`docs/dominios/edicao-de-perfil/README.md`](https://github.com/Lanaaa22/SOT/blob/main/docs/dominios/edicao-de-perfil/README.md)
+- **Front-end (`leds-conectafapes-frontend-backoffice`):**
+    - [`src/modules/Pessoas/components/DashboardPessoa.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/components/DashboardPessoa.vue)
+    - [`src/modules/Pessoas/composables/usePessoaDashboard.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/composables/usePessoaDashboard.ts)
+    - [`src/modules/Pessoas/api/services/PessoaService.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/api/services/PessoaService.ts)
+    - [`src/modules/Pessoas/entities/pessoaEntities.ts`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/entities/pessoaEntities.ts)
+    - [`src/modules/Pessoas/view/DetalhesPessoa.vue`](https://github.com/leds-conectafapes/leds-conectafapes-frontend-backoffice/blob/develop/src/modules/Pessoas/view/DetalhesPessoa.vue)
+- **Back-end (`leds-conectafapes-backend-admin`):**
+    - [`src/ConectaFapes/ConectaFapes.WebApi/Controllers/GestaoCadastro/PessoaFisicaController.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.WebApi/Controllers/GestaoCadastro/PessoaFisicaController.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/DashboardPessoaFisicaService.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/DashboardPessoaFisicaService.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/UseCase/DashboardPessoaFisicaHandler.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/UseCase/DashboardPessoaFisicaHandler.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/UseCase/DashboardPessoaFisicaCommand.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/UseCase/DashboardPessoaFisicaCommand.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaResponseDto.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaResponseDto.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaContadoresDto.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaContadoresDto.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaProjetoDto.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaProjetoDto.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaBolsaDto.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Dashboard/Dtos/DashboardPessoaFisicaBolsaDto.cs)
+    - [`src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Shared/PessoaFisicaAuthorizationHelper.cs`](https://github.com/leds-conectafapes/leds-conectafapes-backend-admin/blob/develop/src/ConectaFapes/ConectaFapes.Application/Services/GestaoCadastro/PessoaFisica/Shared/PessoaFisicaAuthorizationHelper.cs)
+

@@ -2,6 +2,18 @@
   background: radial-gradient(circle at left, #1e293b, #429fb2 10%, #50cbde 20%, #429fb2 30%, #1e293b 50%, #262a30);
 }
 
+/* Tipografia geral e leitura */
+.md-typeset {
+  font-size: 0.8rem; /* Reduz suavemente o tamanho do texto (padrão do tema é 0.8rem) */
+  line-height: 1.6;
+}
+
+/* Espaçamento entre parágrafos */
+.md-typeset p {
+  margin-top: 0;
+  margin-bottom: 1.4em; /* Aumenta a distância entre parágrafos */
+}
+
 /* ==========================================================================
    BPMN Viewer Interativo (bpmn-js)
    ========================================================================== */
